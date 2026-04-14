@@ -10,6 +10,8 @@
 | Folder | Description |
 |--------|-------------|
 | [assets/](assets/index.md) | Locally stored media (images, diagrams) |
+| [concepts/](concepts/index.md) | Reusable theoretical concepts — hardware, algorithms, distributed systems |
+| [databases/](databases/index.md) | Database paradigms, storage engines, and real-world implementations |
 | [engineering/](engineering/index.md) | Engineering knowledge items |
 | [datasets/](datasets/index.md) | Dataset documents and reference tables |
 
