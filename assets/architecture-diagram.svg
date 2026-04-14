@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360"
+     font-family="sans-serif" font-size="13">
+
+  <!-- Background -->
+  <rect width="640" height="360" fill="#f8f9fa" rx="8"/>
+
+  <!-- Title -->
+  <text x="320" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#212529">
+    High-Level System Architecture
+  </text>
+
+  <!-- Client box -->
+  <rect x="40" y="60" width="120" height="50" rx="6" fill="#4dabf7" stroke="#339af0" stroke-width="1.5"/>
+  <text x="100" y="80" text-anchor="middle" fill="#fff" font-weight="bold">Client</text>
+  <text x="100" y="98" text-anchor="middle" fill="#fff" font-size="11">(Browser / App)</text>
+
+  <!-- API Gateway box -->
+  <rect x="240" y="60" width="160" height="50" rx="6" fill="#69db7c" stroke="#40c057" stroke-width="1.5"/>
+  <text x="320" y="80" text-anchor="middle" fill="#fff" font-weight="bold">API Gateway</text>
+  <text x="320" y="98" text-anchor="middle" fill="#fff" font-size="11">REST · GraphQL</text>
+
+  <!-- Services box -->
+  <rect x="240" y="180" width="160" height="50" rx="6" fill="#ffa94d" stroke="#fd7e14" stroke-width="1.5"/>
+  <text x="320" y="200" text-anchor="middle" fill="#fff" font-weight="bold">Services Layer</text>
+  <text x="320" y="218" text-anchor="middle" fill="#fff" font-size="11">Business Logic</text>
+
+  <!-- Database box -->
+  <rect x="240" y="290" width="160" height="50" rx="6" fill="#da77f2" stroke="#be4bdb" stroke-width="1.5"/>
+  <text x="320" y="310" text-anchor="middle" fill="#fff" font-weight="bold">Database</text>
+  <text x="320" y="328" text-anchor="middle" fill="#fff" font-size="11">PostgreSQL / Redis</text>
+
+  <!-- External Services box -->
+  <rect x="470" y="180" width="140" height="50" rx="6" fill="#f06595" stroke="#e64980" stroke-width="1.5"/>
+  <text x="540" y="200" text-anchor="middle" fill="#fff" font-weight="bold">External APIs</text>
+  <text x="540" y="218" text-anchor="middle" fill="#fff" font-size="11">3rd-party services</text>
+
+  <!-- Arrows -->
+  <!-- Client -> API Gateway -->
+  <line x1="160" y1="85" x2="240" y2="85" stroke="#495057" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- API Gateway -> Services -->
+  <line x1="320" y1="110" x2="320" y2="180" stroke="#495057" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Services -> Database -->
+  <line x1="320" y1="230" x2="320" y2="290" stroke="#495057" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Services -> External -->
+  <line x1="400" y1="205" x2="470" y2="205" stroke="#495057" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#495057"/>
+    </marker>
+  </defs>
+</svg>
